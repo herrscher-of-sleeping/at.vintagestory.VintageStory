@@ -28,7 +28,6 @@ modules:
     build-commands:
       - install -Dpt /app/bin vintagestory apply_extra
       - install -Dpt /app/share/icons/hicolor/512x512/apps at.vintagestory.VintageStory.png
-      - install -Dpt /app/share/metainfo at.vintagestory.VintageStory.metainfo.xml
       - desktop-file-install --dir=/app/share/applications at.vintagestory.VintageStory.desktop
       - desktop-file-install --dir=/app/share/applications at.vintagestory.VintageStory-vintagestoryjoin.desktop
       - desktop-file-install --dir=/app/share/applications at.vintagestory.VintageStory-vintagestorymodinstall.desktop
@@ -46,8 +45,6 @@ modules:
       - type: file
             # from converting Vintage Story's assets/gameicon.xpm to png
         path: at.vintagestory.VintageStory.png
-      - type: file
-        path: at.vintagestory.VintageStory.metainfo.xml
         # Use extra-data and apply_extra to download proprietary files at
         # install time, per request of the VintageStory developers.
         # See: https://www.vintagestory.at/forums/topic/4018-permission-for-flatpak-package/?do=findComment&comment=17400
