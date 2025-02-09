@@ -7,3 +7,4 @@ Type=Application
 StartupNotify=false
 Icon=at.vintagestory.VintageStory
 MimeType=x-scheme-handler/vintagestoryjoin
+PrefersNonDefaultGPU=true
